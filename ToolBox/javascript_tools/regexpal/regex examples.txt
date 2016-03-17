@@ -1,0 +1,26 @@
+Regular Expressions Patterns
+
+Phone Numbers:
+var USphonePatt = /^\([0-9]{3}\) [0-9]{3}-[0-9]{4}$/;   
+
+Email:
+var emailPatt = /^[\w.%+\-]+\.[A-Za-z]{2,6}$/
+
+Postal Codes:
+var zipPatt = /(^\d{5}$)|(^\d{5}-\d{4}$)/;
+var zipPatt = /^\d{5}(?:-\d{4}}:)?$/
+var canadaPC = /^[A-Z]\d[A-Z] \d[A-Z]\d$/
+var UKPCode= /^[A-Z]{1,2}\d{1,2}[A-Z]? \d[A-Z]{2}$/
+
+
+
+Quick Reminders:
+
+RegExpVar =/Hello World/; 
+is the same as 
+RegExpVar = new RegExp("Hello World");
+
+Test for RegExp:
+true or false = RegExpVar.test(myString)
+
+
